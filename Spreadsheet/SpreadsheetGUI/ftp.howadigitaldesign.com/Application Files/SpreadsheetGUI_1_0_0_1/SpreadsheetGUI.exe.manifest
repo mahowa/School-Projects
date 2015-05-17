@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SpreadsheetGUI.exe" version="1.0.0.1" publicKeyToken="6852c8498da3b73f" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SpreadsheetGUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SpreadsheetGUI.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DependencyGraph.dll" size="6656">
+      <assemblyIdentity name="DependencyGraph" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dy4ZIH+nh/5TxQ1KRf3H5KOiFlD6WwUHvaqfjLyIc/M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Formula.dll" size="13312">
+      <assemblyIdentity name="Formula" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6FKRa0jjRfmFh2IoVoh86rZvwBsvj8bRGjga0KdqDro=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Spreadsheet.dll" size="14848">
+      <assemblyIdentity name="Spreadsheet" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>p8BmvdRjw0SPqMv4zhHBv7sxQWAgrMfJGjT2ku+i6P4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SpreadsheetGUI.exe" size="265160">
+      <assemblyIdentity name="SpreadsheetGUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>c38+knVqPrM1d1/fSJD0lTIeXkJH1ffwdn13AKD9b80=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SpreadsheetPanel.dll" size="13312">
+      <assemblyIdentity name="SpreadsheetPanel" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tFfryII45FEdQ/N3jMSpKkmoCMX0OF4B1mBWQq7WJIQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="SpreadsheetGUI.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MATT-SURFACE\Matt" issuerKeyHash="0300575713a3baea87bb349ca36500412ae7d749" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>MbbazTf0YXsazTGh/HeQ5lU8yalOFugncfTxfdD/GV8=</DigestValue></Reference></SignedInfo><SignatureValue>Ols7CKU54V37MAJz/wA5YB4fbicmLsHsZ3Hze3rwBq5i+UkpFeKfd5gyYBxkqwp3J32OoS1fM42+sjwM/Z9UOpA5sNVrdBhNbi7KyAPkT+vULoOgfgw/54a85B5DyDqbofVu+CA61T1smOGmAjChFDLU5+61xd7BHrY32Ex0hQ4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qLYV+Lzibsc7+rg/7U2vp2XYUI2hSiW4Us6Nfje4x3VO+qKdWEUGTB8Ll5hePX3Ss+COMIrQ3LZvA7CjoeFKU52k5EprJfCmnPhzSsg6SUjUK+ilZtCEG25XKunTMgxcGDwUpsaNGBKt9ouJAkoe0VslqfBMNPSHeiq1nLiu1s8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5f19ffd07df1f47127e8164ea9c93c55e69077fca131cd1a7b61f437cddab631" Description="" Url=""><as:assemblyIdentity name="SpreadsheetGUI.exe" version="1.0.0.1" publicKeyToken="6852c8498da3b73f" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MATT-SURFACE\Matt</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>/dzC6b1LhjHEw+XDhtaMV1bGFpOJMMnwIaeZ4h4IDxY=</DigestValue></Reference></SignedInfo><SignatureValue>EcTL/saRYfjB+WLHZVEPCbXivrryqmbcScqP5IL1jzEspS63Wxkgko/AgdXcIADgJ6fRjav1ujghXHKlIWHGysxNQeIDye2TBdBIMZ6dlfBzmlSgYqL2JX6YXvb5iwnUYN3yP8n11i6dSFsODJtnMeT8/fnWVO/ZRpXC9sW9aKw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qLYV+Lzibsc7+rg/7U2vp2XYUI2hSiW4Us6Nfje4x3VO+qKdWEUGTB8Ll5hePX3Ss+COMIrQ3LZvA7CjoeFKU52k5EprJfCmnPhzSsg6SUjUK+ilZtCEG25XKunTMgxcGDwUpsaNGBKt9ouJAkoe0VslqfBMNPSHeiq1nLiu1s8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQUMvcUW1Z7ZhI6GyL5XeGgjANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIATQBBAFQAVAAtAFMAVQBSAEYAQQBDAEUAXABNAGEAdAB0MB4XDTE1MDMwNDIzNDUzOVoXDTE2MDMwNDA1NDUzOVowLTErMCkGA1UEAx4iAE0AQQBUAFQALQBTAFUAUgBGAEEAQwBFAFwATQBhAHQAdDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAqLYV+Lzibsc7+rg/7U2vp2XYUI2hSiW4Us6Nfje4x3VO+qKdWEUGTB8Ll5hePX3Ss+COMIrQ3LZvA7CjoeFKU52k5EprJfCmnPhzSsg6SUjUK+ilZtCEG25XKunTMgxcGDwUpsaNGBKt9ouJAkoe0VslqfBMNPSHeiq1nLiu1s8CAwEAATANBgkqhkiG9w0BAQsFAAOBgQCLEQvuL6IZ8I2kgXT+00jC8ukfUR/T3pXs+QyxQNCXsctwJibi4wyYfM+AIxhFRchRDgcZu4g6UXxbHJRgLJlG48Ri0X+Uk+2pQznG1Df9CfVnFAu0hwJkb7MywTisveJNSh7KnFCYlBee1l98i/L2QWrT2MiR2RgLfUVZT5c2hA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
