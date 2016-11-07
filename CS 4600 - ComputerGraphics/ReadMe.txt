@@ -1,0 +1,1 @@
+This course covers basic concepts of computer graphics and animation, in particular: mathematics for computer graphics, 2D image compression, 3D transformations, projections, illumination models, rasterization, ray-tracing, skeletal animation, skinning.
