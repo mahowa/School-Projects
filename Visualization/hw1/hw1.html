@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Last Updated Fall 2016 -->
+    <!-- Matthew J. Howa -->
+    <!--u0805396-->
+    <!--u0805396@utah.edu-->
+
+    <!-- University of Utah -->
+    <!--| X | Y |-->
+    <!--             -->
+    <!--10.0| 8.04-->
+
+    <!--8.0	| 6.95-->
+
+    <!--13.0| 7.58-->
+
+    <!--9.0	|8.81-->
+
+    <!--11.0|8.33-->
+
+    <!--14.0|9.96-->
+
+    <!--6.0	|7.24-->
+
+    <!--4.0	|4.26-->
+
+    <!--12.0|10.84-->
+
+    <!--7.0	|4.82-->
+
+    <!--5.0	|5.68-->
+
+    <meta charset="UTF-8">
+    <meta name="AUTHOR"      content="Matthew J. Howa"/>
+    <meta name="description" content="CS-5630 / CS-6630 Homework 1"/>
+    <title>CS-5630 / CS-6630 Homework 1</title>
+
+    <style>
+        .a{
+            fill: red;
+        }
+        .b{
+            fill: black;
+        }
+
+        div{
+            margin: 30px;
+        }
+
+        svg line{
+            stroke:rgb(255,0,0);
+            stroke-width: 0.25px
+        }
+    </style>
+</head>
+<body>
+<h1><img src="http://orientation.utah.edu/_images/Block%20U%203D%20logo%20cmyk.jpg" height="50" width="50" alt="U of U logo">
+    CS-5630 / CS-6630 Homework 1
+    </h1>
+	<h2>Matthew J. Howa <br/>
+    u0805396<br/>
+    u0805396@utah.edu</h2>
+
+<hr/>
+<hr/>
+<div id="BarChart">
+    <h2>Bar Chart For Y</h2>
+    <svg class="chart" width="800" height="450">
+        <g transform="scale(65 2)">
+            <g transform="translate(0,0);">
+                <!--10.0| 8.04-->
+                <rect class="a" width="8.04" height="20"></rect>
+            </g>
+            <g transform="translate(0,20)">
+                <!--8.0	| 6.95-->
+                <rect class="b" width="6.95" height="20"></rect>
+            </g>
+            <g transform="translate(0,40)">
+                <!--13.0| 7.58-->
+                <rect class="a" width="7.58" height="20"></rect>
+            </g>
+            <g transform="translate(0,60)">
+                <!--9.0	|8.81-->
+                <rect class="b" width="8.81" height="20"></rect>
+            </g>
+            <g transform="translate(0,80)">
+                <!--11.0|8.33-->
+                <rect class="a" width="8.33" height="20"></rect>
+            </g>
+            <g transform="translate(0,100)">
+                <!--14.0|9.96-->
+                <rect class="b" width="9.96" height="20"></rect>
+            </g>
+            <g transform="translate(0,120)">
+                <!--6.0	|7.24-->
+                <rect class="a" width="7.24" height="20"></rect>
+            </g>
+            <g transform="translate(0,140)">
+                <!--4.0	|4.26-->
+                <rect class="b" width="4.2" height="20"></rect>
+            </g>
+            <g transform="translate(0,160)">
+                <!--12.0|10.84-->
+                <rect class="a" width="10.84" height="20"></rect>
+            </g>
+            <g transform="translate(0,180)">
+                <!--7.0	|4.82-->
+                <rect class="b" width="4.82" height="20"></rect>
+            </g>
+            <g transform="translate(0,200)">
+                <!--5.0	|5.68-->
+                <rect class="a" width="5.68" height="20"></rect>
+            </g>
+        </g>
+    </svg>
+<hr/>
+    <h2>Bar Chart For x</h2>
+    <svg class="chart" width="800" height="450">
+        <g transform="scale(65 2)">
+            <g transform="translate(0,0);">
+                <!--10.0| 8.04-->
+                <rect class="a" width="10.0" height="20"></rect>
+            </g>
+            <g transform="translate(0,20)">
+                <!--8.0	| 6.95-->
+                <rect class="b" width="8.0" height="20"></rect>
+            </g>
+            <g transform="translate(0,40)">
+                <!--13.0| 7.58-->
+                <rect class="a" width="13.0" height="20"></rect>
+            </g>
+            <g transform="translate(0,60)">
+                <!--9.0	|8.81-->
+                <rect class="b" width="9.0" height="20"></rect>
+            </g>
+            <g transform="translate(0,80)">
+                <!--11.0|8.33-->
+                <rect class="a" width="11.0" height="20"></rect>
+            </g>
+            <g transform="translate(0,100)">
+                <!--14.0|9.96-->
+                <rect class="b" width="14.0" height="20"></rect>
+            </g>
+            <g transform="translate(0,120)">
+                <!--6.0	|7.24-->
+                <rect class="a" width="6.0" height="20"></rect>
+            </g>
+            <g transform="translate(0,140)">
+                <!--4.0	|4.26-->
+                <rect class="b" width="4.0" height="20"></rect>
+            </g>
+            <g transform="translate(0,160)">
+                <!--12.0|10.84-->
+                <rect class="a" width="12.0" height="20"></rect>
+            </g>
+            <g transform="translate(0,180)">
+                <!--7.0	|4.82-->
+                <rect class="b" width="7.0" height="20"></rect>
+            </g>
+            <g transform="translate(0,200)">
+                <!--5.0	|5.68-->
+                <rect class="a" width="5.0" height="20"></rect>
+            </g>
+        </g>
+    </svg>
+    </div>
+
+<hr/>
+<hr/>
+    <div id="lineGraphs">
+        <h2>X points as path (line chart)</h2>
+        <svg height="250" width="800">
+            <g transform="scale(10 10)">
+                <!--10.0| 8.04-->
+                <!--8.0	| 6.95-->
+                <!--13.0| 7.58-->
+                <!--9.0	|8.81-->
+                <!--11.0|8.33-->
+                <!--14.0|9.96-->
+                <!--6.0	|7.24-->
+                <!--4.0	|4.26-->
+                <!--12.0|10.84-->
+                <!--7.0	|4.82-->
+                <!--5.0	|5.68-->
+                <path d="M0 0 L 5 10.0 L 10 8.0 L 15 13.0 L 20 9.0 L 25 11.0 L 30 14.0 L 35 6.0 L 40 4.0 L 45 12.0 L 50 7.0 L 55 5.0"  stroke="red" stroke-width="1" fill="none"></path>
+            </g>
+        </svg>
+        <hr/>
+        <h2>Y points as lines (line chart)</h2>
+        <svg height="250" width="800" viewBox="0 0 800 250">
+            <g transform="scale(5,20)" >
+                <!--10.0| 8.04-->
+                <line x1="10" y1="8.4" x2="10.0" y2="8.4"></line>
+                <!--8.0	| 6.95-->
+                <line x1="10" y1="8.4" x2="20" y2="6.95" ></line>
+                <!--13.0| 7.58-->
+                <line x1="20" y1="6.95" x2="30" y2="7.58" ></line>
+                <!--9.0	|8.81-->
+                <line x1="30" y1="7.58" x2="40" y2="8.81" ></line>
+                <!--11.0|8.33-->
+                <line x1="40" y1="8.81" x2="50" y2="8.33" ></line>
+                <!--14.0|9.96-->
+                <line x1="50" y1="8.33" x2="60" y2="9.96" ></line>
+                <!--6.0	|7.24-->
+                <line x1="60" y1="9.96" x2="70" y2="7.24" ></line>
+                <!--4.0	|4.26-->
+                <line x1="70" y1="7.24" x2="80" y2="4.26" ></line>
+                <!--12.0|10.84-->
+                <line x1="80" y1="4.26" x2="90" y2="10.84" ></line>
+                <!--7.0	|4.82-->
+                <line x1="90" y1="10.84" x2="100" y2="4.82" ></line>
+                <!--5.0	|5.68-->
+                <line x1="100" y1="4.82" x2="110" y2="5.68" ></line>
+            </g>
+        </svg>
+    </div>
+<hr/><hr/>
+<div id="areaCharts">
+    <h2>X Area Chart</h2>
+    <svg height="250" width="800" >
+        <g transform="translate(0, 250) scale(10, -10)">
+            <path d="M0 0 L 0 5  L 5 10.0 L 10 8.0 L 15 13.0 L 20 9.0 L 25 11.0 L 30 14.0 L 35 6.0 L 40 4.0 L 45 12.0 L 50 7.0 L 55 5.0 L 55 0 z"  stroke="red" stroke-width="1" fill="black"></path>
+        </g>
+    </svg>
+    <h2>Y Area Chart</h2>
+    <svg height="250" width="800" >
+
+        <g transform="translate(0, 250) scale(10, -10)">
+            <path d="M0 0 L 0 5  L 5 8.04 L 10 6.95 L 15 7.58 L 20 8.81 L 25 8.33 L 30 9.96 L 35 7.24 L 40 4.26 L 45 10.84 L 50 4.82 L 55 5.68 L 55 0 z"  stroke="red" stroke-width="1" fill="black"></path>
+        </g>
+    </svg>
+</div>
+<hr/>
+<hr/>
+<div id="scatterPlot">
+    <svg height="200" width="200"  >
+            <g transform="translate(0, 200) scale(1,-1)">
+                <rect height="190" width="190" stroke-width="1" stroke="black" fill-opacity="0"></rect>
+                <!--10.0| 8.04-->
+                <circle cx="100.0" cy="80.4" r="5" stroke="black" stroke-width="1" fill="red" ></circle>
+                <!--8.0	| 6.95-->
+                <circle cx="80.0" cy="69.5" r="5" stroke="black" stroke-width="1" fill="red" ></circle>
+                <!--13.0| 7.58-->
+                <circle cx="130.0" cy="75.8" r="5" stroke="black" stroke-width="1" fill="red" ></circle>
+                <!--9.0	|8.81-->
+                <circle cx="90.0" cy="88.1" r="5" stroke="black" stroke-width="1" fill="red" ></circle>
+                <!--11.0|8.33-->
+                <circle cx="110.0" cy="83.3" r="5" stroke="black" stroke-width="1" fill="red" ></circle>
+                <!--14.0|9.96-->
+                <circle cx="140.0" cy="99.6" r="5" stroke="black" stroke-width="1" fill="red" ></circle>
+                <!--6.0	|7.24-->
+                <circle cx="60.0" cy="72.4" r="5" stroke="black" stroke-width="1" fill="red" ></circle>
+                <!--4.0	|4.26-->
+                <circle cx="40.0" cy="42.6" r="5" stroke="black" stroke-width="1" fill="red" ></circle>
+                <!--12.0|10.84-->
+                <circle cx="120.0" cy="108.4" r="5" stroke="black" stroke-width="1" fill="red" ></circle>
+                <!--7.0	|4.82-->
+                <circle cx="70.0" cy="48.2" r="5" stroke="black" stroke-width="1" fill="red" ></circle>
+                <!--5.0	|5.68-->
+                <circle cx="50.0" cy="56.8" r="5" stroke="black" stroke-width="1" fill="red" ></circle>
+
+            </g>
+
+    </svg>
+</div>
+
+</body>
+</html>
