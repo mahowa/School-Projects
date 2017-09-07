@@ -1,0 +1,225 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.footer_buffer{
+    height: 100px;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*padding: 1rem;*/
+
+    width: 100%;
+
+    background-image: -webkit-linear-gradient(top, #af1217, #6e2624);
+    background-image: -moz-linear-gradient(top, #af1217, #6e2624);
+    background-image: -o-linear-gradient(top, #af1217, #6e2624);
+    background-image: linear-gradient(to bottom, #af1217, #6e2624);
+    text-align: center;
+    vertical-align: text-top;
+    font-size: larger;
+    align-content: center;
+    display: inline-block;
+}
+div.footer a{
+    padding: 25px;
+    background-color: transparent;
+    align-content: center;
+    color: whitesmoke;
+    margin-top: 30px;
+}
+div.footer a:hover{
+
+    background-color: transparent;
+}
+img{
+    max-width:100%;
+    max-height:100%;
+}
+
+#projects{
+    border: outset;
+    border-color: #960000 red black black;
+    border-radius: 5px;
+    width:480px;
+    margin: auto;
+    align-content: center;
+    padding: 15px;
+}
+
+.norm{
+    color:black;
+    background-color: transparent;
+}
+
+h1{
+    text-align: center
+}
+
+h2{
+    text-align: center;
+}
+
+.projects a:hover {
+    background: transparent;
+}
+
+
+.container {
+    display: table;
+    border: groove;
+    border-color: #960000 red black black;
+    border-radius: 5px;
+    margin: auto;
+    align-content: center;
+    padding: 15px;
+    background-color: Transparent;
+    margin-top: 25px;
+
+}
+#by-department.container{
+    padding: 30px;
+    align-content: center;
+
+}
+.table{
+    display: table;
+    border-collapse: collapse;
+    margin: auto;
+
+    box-shadow: 0px 10px 10px #888888;
+}
+
+a#row{
+    color: #111111;
+    width: 200%;
+    text-decoration: none;
+}
+a#row:hover{
+    color: whitesmoke;
+    width: 100%;
+}
+.row#tableheader  {
+    display: table-row;
+
+    background-color: rgb(110, 38, 36);
+    color: whitesmoke;
+}
+.row1  {
+    display: table-row;
+    background-color: rgba(128, 128, 128, 0.45);
+    text-align: center;
+}
+
+
+
+.row1:hover  {
+    display: table-row;
+    background-color: rgb(128, 128, 128);
+}
+
+.row2  {
+    display: table-row;
+    background-color: rgba(128, 128, 128, 0.75);
+    text-align: center;
+}
+
+.row2:hover  {
+    display: table-row;
+    background-color: rgb(128, 128, 128);
+}
+
+.col {
+    display: table-cell;
+    padding: 25px;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+.person{
+    font-size: 20px;
+}
+
+a.person:hover{
+    background-color: transparent;
+
+    color: #1a3317;
+}
+
+input[type="submit"] {
+
+  
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 18px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 10px;
+    border: solid 1px #6e2624;
+    transition: box-shadow 0.3s, border 0.3s;
+    color: whitesmoke;
+    background-image: -webkit-linear-gradient(top, #6e2624, #af1217);
+    background-image: -moz-linear-gradient(top, #6e2624, #af1217);
+    background-image: -o-linear-gradient(top, #6e2624, #af1217);
+    background-image: linear-gradient(to bottom, #6e2624, #af1217);
+}
+input[type="submit"]:hover {
+    outline: none;
+    border: solid 1px #707070;
+    background-image: -webkit-linear-gradient(top, #808080, #af1217);
+    background-image: -moz-linear-gradient(top, #808080, #af1217);
+    background-image: -o-linear-gradient(top, #808080, #af1217);
+    background-image: linear-gradient(to bottom, #808080, #af1217);
+
+}
+
+a#register-btn{
+    margin: 5%;
+
+    text-decoration: none;
+    background: transparent;
+    color: black;
+    padding: 12px;
+    border-radius: 3px;
+    border: groove;
+}
+
+a#register-btn:hover {
+
+    background-image: -webkit-linear-gradient(top, #808080, #af1217);
+    background-image: -moz-linear-gradient(top, #808080, #af1217);
+    background-image: -o-linear-gradient(top, #808080, #af1217);
+    background-image: linear-gradient(to bottom, #808080, #af1217);
+
+    cursor:pointer;
+}
+
+.login{
+    position: absolute;
+    right: 2%;
+
+}
+
+
+
+

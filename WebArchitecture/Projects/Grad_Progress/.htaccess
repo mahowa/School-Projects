@@ -1,0 +1,12 @@
+
+
+Options All -Indexes
+
+RewriteEngine On
+#
+RewriteCond %{REQUEST_URI} !Style
+RewriteCond %{REQUEST_URI} !JS
+RewriteCond %{REQUEST_URI} !bootstrap
+RewriteCond %{REQUEST_URI} !Api
+RewriteCond %{REQUEST_URI} !Controller
+RewriteRule ^(.*)$ Controller/$1 [L]

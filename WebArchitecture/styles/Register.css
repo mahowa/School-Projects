@@ -1,0 +1,166 @@
+#reg-div.container{
+    padding: 2%;
+    width: 400px;
+}
+
+.register-input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    margin-top: 2px;
+    font-weight: 500;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #d8d8d8;
+}
+.register-input:focus {
+    border-color: #1e9ce6;
+    outline: 0;
+    box-shadow: 0 0 5px 2px #969696;
+}
+
+
+
+.register-switch {
+    height: 32px;
+    margin-bottom: 15px;
+    padding: 4px;
+    background: #6e2624;
+    border-radius: 2px;
+    background-image: -webkit-linear-gradient(top, #6e2624, #af1217);
+    background-image: -moz-linear-gradient(top, #6e2624, #af1217);
+    background-image: -o-linear-gradient(top, #6e2624, #af1217);
+    background-image: linear-gradient(to bottom, #6e2624, #af1217);
+    -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 1px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.02);
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 1px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.register-switch-input {
+    display: none;
+}
+
+.register-switch-label {
+    float: left;
+    width: 50%;
+    line-height: 32px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.register-switch-input:checked + .register-switch-label {
+    font-weight: 500;
+    color: #434248;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    background: white;
+    border-radius: 2px;
+    background-image: -webkit-linear-gradient(top, #fefefe, #eeeeee);
+    background-image: -moz-linear-gradient(top, #fefefe, #eeeeee);
+    background-image: -o-linear-gradient(top, #fefefe, #eeeeee);
+    background-image: linear-gradient(to bottom, #fefefe, #eeeeee);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/*second*/
+.register-input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    margin-top: 2px;
+    font-weight: 500;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 3px;
+}
+.register-input:focus {
+    border-color: #1e9ce6;
+    outline: 0;
+    box-shadow: 0 0 5px 2px #969696;
+}
+
+
+
+.register-switch {
+    height: 32px;
+    margin-bottom: 15px;
+    padding: 4px;
+    background: #6e2624;
+    border-radius: 2px;
+    background-image: -webkit-linear-gradient(top, #6e2624, #af1217);
+    background-image: -moz-linear-gradient(top, #6e2624, #af1217);
+    background-image: -o-linear-gradient(top, #6e2624, #af1217);
+    background-image: linear-gradient(to bottom, #6e2624, #af1217);
+    -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 1px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.02);
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 1px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.register-switch-input {
+    display: none;
+}
+
+.register-switch-label {
+    float: left;
+    width: 50%;
+    line-height: 32px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.register-switch-input:checked + .register-switch-label {
+    font-weight: 500;
+    color: #434248;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    background: white;
+    border-radius: 2px;
+    background-image: -webkit-linear-gradient(top, #fefefe, #eeeeee);
+    background-image: -moz-linear-gradient(top, #fefefe, #eeeeee);
+    background-image: -o-linear-gradient(top, #fefefe, #eeeeee);
+    background-image: linear-gradient(to bottom, #fefefe, #eeeeee);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.register-button{
+    margin: auto;
+    width: 100%;
+}
+
+
+/* The CSS */
+select {
+    padding:10px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background-image: -webkit-linear-gradient(top, #6e2624, #af1217);
+    background-image: -moz-linear-gradient(top, #6e2624, #af1217);
+    background-image: -o-linear-gradient(top, #6e2624, #af1217);
+    background-image: linear-gradient(to bottom, #6e2624, #af1217);
+    color: white;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+    width: 100%;
+}
+
+option{
+    color: black;
+}
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}

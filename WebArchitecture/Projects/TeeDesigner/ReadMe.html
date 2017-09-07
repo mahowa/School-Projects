@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ReadMe</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+	<link href="bootstrap/css/bootstrap.css"/>
+</head>
+<body>
+<div class="jumbotron">
+	<p>Read Me</p>
+	<p>Summary:</p>
+	<p>&nbsp;</p>
+	<p>Our project is product design application. The app gives the user the ability to create or upload a logo and then place it on a number of products or upload their own image and crop it so they can place their logo on it.&nbsp;&nbsp; The people involved on this project were, Matt Howa, Matt Willden, and Charlie Barber.&nbsp; We decided to use some open source libraries as our starting point and then add a number of features that we thought would improve the site.&nbsp;&nbsp; We spent a large amount of time on this project.&nbsp;&nbsp; Some of the time was spent individually working on our own parts but, we spent the majority of the time working together as a group.&nbsp; We all ran into some difficulties in each of our implementations, but eventually overcame the obstacles and successfully deployed our individual parts to work together.&nbsp;</p>
+	</div>
+	<p>&nbsp;</p>
+	<p>Personal Breakdown of Features Added</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><span style="text-decoration: underline;">Matt Howa</span></strong></p>
+	<p>&nbsp;</p>
+<ul>
+	<li>Layer Panel</li>
+</ul>
+<ol>
+	<li>Display Layers in a table</li>
+	<li>Allow for toggling visibility of layers</li>
+	<li>Add new layer</li>
+	<li>Remove Layer</li>
+	<li>Clone Layer</li>
+	<li>Rename Layer
+		<ol>
+			<li>Restrictions on duplicate names (don&rsquo;t allow)</li>
+		</ol>
+	</li>
+</ol>
+<ul>
+	<li>Tee Designer
+		<ol>
+			<li>Gathered Product images, descriptions and specifications. Entered them into the db.</li>
+			<li>Created api&rsquo;s to access db data</li>
+			<li>Created upload scripts to allow user to select a product and place it on the canvas</li>
+			<li>Created scripts to update product information using API&rsquo;s via AJAX</li>
+		</ol>
+	</li>
+	<li>Entire Project
+		<ol>
+			<li>Connected the two components so they would work nicely together.</li>
+			<li>After creating a logo had to post to other page (Tee Designer) then save it to file system. Then Loaded it into an image so it could be selected and added to product designer.</li>
+		</ol>
+	</li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;">Files</span>:</p>
+<ol>
+	<li>TeeDesigner/method-draw/src/Svgcanvas.js
+		<ul>
+			<li>Added getAllLayers method</li>
+			<li>Added mergeLayerList</li>
+		</ul>
+	</li>
+	<li>TeeDesigner/method-draw/LayersExtension.js (Entire File)</li>
+	<li>TeeDesigner/index.php (added scripts &ndash; found in comments)</li>
+	<li>TeeDesigner/method-draw/index.php
+		<ul>
+			<li>added scripts &ndash; found in comments</li>
+			<li>Updated to bootstrap</li>
+			<li>Added Products</li>
+		</ul>
+	</li>
+	<li>TeeDesigner/pics.php (Entire File)
+		<ul>
+			<li>Api to get pictures of products</li>
+		</ul>
+	</li>
+	<li>TeeDesigner/product.php (Entire File)
+		<ul>
+			<li>Api to get product information from db</li>
+		</ul>
+	</li>
+</ol>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;">Libraries Used</span></p>
+<ul>
+	<li>js</li>
+	<li>Method-draw.js</li>
+	<li>Jquery-ui</li>
+	<li>Bootstrap</li>
+</ul>
+<p><span style="text-decoration: underline;">Summary</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I started by combining the two projects TShirtDesigner and method draw. I wanted to make method draw more like Adobe Illustrator so I built the layers panel. The layer&rsquo;s panel adds a ton of functionality to the app giving the user the ability work on specific layers and also toggle their visibility, which in my experience is a huge feature in illustrator. I spent almost 15 hours between the two tasks.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Next I want to make the TShirtDesigner more useful so I found a site that supplied a csv of product specifications and also images to go with the data. I imported the csv into my database then created API&rsquo;s in order to extract the data needed to make the app work. From there I added a product dropdown that allows the user to select a product and load the image to the canvas. Many of the products came in different colors so I created a div that contained the thumbnails of each color. The thumbnails are clickable and once selected would load the specific color into the canvas.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Finally, I spent the remaining hours assisting my group with their tasks and combining them in order to complete our project.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Total Time: 30 hours</p>
+<p>&nbsp;</p>
+<p><strong><span style="text-decoration: underline;">Matt Willden</span></strong></p>
+<p><span style="text-decoration: underline;">&nbsp;</span></p>
+<ul>
+	<li><strong>Uploading Scalable Canvas Image</strong></li>
+</ul>
+<p>The purpose of this part was to create a way for the user to upload custom images to the canvas. With the image uploaded the user could then use the custom image as a template to see what other items look like. It was divided into 2 main parts discussed below.</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Part 1:</strong> <strong>Image uploader ~ 14 hrs.</strong></p>
+<p>&nbsp;the first revolved around the basic image uploader. We decided to go with another open-source library called DropZonejs, it contained many additional features, such as custom event handlers and styling integration, validation etc... We could have written our own uploader but, wouldn&rsquo;t have had all of the additional bonus features that this comes with it for free. The implementation was fairly easy with one caveat, we ran into a problem trying to get the permissions on the Azure Server to let us actually upload the images. This took a very long time to figure out. After that, it was only an hour or so to get the styling right. In the end it was worth the investment in dropzonejs. It gave the project a ton of functionality, without a ton of overhead once implanted. If other areas wanted to have the same uploader it would be easy for future integration and improvement.</p>
+<p>&nbsp;</p>
+<p><strong>Part 2: Image Cropper ~ 8 hrs</strong></p>
+<p>The second part focused taking what the image uploader uploaded, then making it fit the dimensions of the canvas i.e. &ldquo;scalable&rdquo;.&nbsp; The idea was to be able to take the original image size, and help make it fit to the canvas size without distortion. Again, we chose to use an open-source javascript library to handle cropping. It came with a lot of features that we could leverage, like modifying a given element, then injecting it into a given canvas. It proved to be incredibly powerful, thought documentation was limited, so implementation was slow.</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;</p>
+<ol>
+	<li><strong>Image Uploader </strong>
+		<ol>
+			<li>File Contribution:
+				<ul>
+					<li>php
+						<ul>
+							<li>Scripts to set up dropzone options and configuration</li>
+							<li>bootstrap ids for styling</li>
+						</ul>
+					</li>
+					<li>bootstrap/css/dist/dropzone.css &amp; boostrap/css/style.css
+						<ul>
+							<li>Customized bootstrap elements for styling</li>
+						</ul>
+					</li>
+					<li>js/dropzone.js &amp; js/imageUploader.js
+						<ul>
+							<li>scripts to change options to bring up the uploader, customized dropzone source to work properly</li>
+						</ul>
+					</li>
+					<li>php
+						<ul>
+							<li>server-side implementation of uploader</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ol>
+	</li>
+</ol>
+<ol start="2">
+	<li><strong>Image Cropper </strong>
+		<ol>
+			<li>File Contribution:
+				<ul>
+					<li>php
+						<ul>
+							<li>added .classes / #ids as well as scripts to integrate the croppie.js code</li>
+						</ul>
+					</li>
+					<li>boostrap/css/croppie.css
+						<ul>
+							<li>just a few tweeks for the croppie</li>
+						</ul>
+					</li>
+					<li>js/croppie.js &amp; js/imageUploader.js
+						<ul>
+							<li>wrote lots of scripts for handling the cropper</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ol>
+	</li>
+</ol>
+<p><strong><span style="text-decoration: underline;">Summary</span></strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>In addition to implementing the image uploading part of the project, I helped with various tasks such as putting things together in the end and formatting the project. Also, implementing the 2 afore mentions JavaScript libraries took a lot of time to get them function properly.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Total Time: 25 Hours</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong><span style="text-decoration: underline;">Charlie Barber</span></strong></p>
+<p><span style="text-decoration: underline;">&nbsp;</span></p>
+<ul>
+	<li><strong>Keyboard Shortcuts</strong></li>
+</ul>
+<p><span style="text-decoration: underline;">&nbsp;</span></p>
+<p>I spent around 4 hours on this particular feature.&nbsp;&nbsp; I found a really cool javascript library extension called Mousetrap.&nbsp; It was very easy and straightforward to use and helped me bind buttons to certain actions on the webpage.&nbsp; Some of the features were very easy to implement.&nbsp; I struggled with some of the features though.&nbsp;&nbsp; I struggled to simulate clicking on the drop-down menus with a shortcut key.&nbsp;&nbsp; I did not successfully implement this feature, but implemented a lot of the other buttons.&nbsp; This was implemented on the main page of designing the shirt.&nbsp;</p>
+<p>I continued to implement more shortcuts on the graphic designer webpage.&nbsp; Although it turned out to be simple,&nbsp; it was very time consuming.&nbsp; I ran into issues with the Mousetrap library I found and it would not work on this page despite working on the main page.&nbsp; So then I researched and implemented the hot keys with the js.hotkeys.js library.&nbsp;&nbsp; Once I figured out the syntax, I made it work very easily with the page.</p>
+<p>&nbsp;</p>
+<ul>
+	<li><strong>Converting Image from Bitmap to SVG</strong></li>
+</ul>
+<p>I spent a considerable amount of time on this part of the project.&nbsp;&nbsp; It totaled up to about 8 hours. The ReadMe for the library, Imagetracer.js, said that it could be implemented in Node.js.&nbsp; So I spent a couple hours studying Node.js and was going to implement it with Node.js.&nbsp;&nbsp; I discovered that you did not need to use Node.js and the way the library Imagetracer.js used it was very confusing.&nbsp;&nbsp; I studied this library for quite awhile trying to figure out how it worked.&nbsp; It was difficult to understand.&nbsp;&nbsp; I ended up figuring out the basics of it and implemented that into our project so we could convert our images.&nbsp;&nbsp; There were some more advanced tools in the library, but I could not figure them out.&nbsp;&nbsp;</p>
+<p>Time Spent: 25hr</p>
+<p><span style="text-decoration: underline;">&nbsp;</span></p>
+<p><span style="text-decoration: underline;">&nbsp;</span></p>
+<p><span style="text-decoration: underline;">&nbsp;</span></p>
+<p><span style="text-decoration: underline;">&nbsp;</span></p>
+</body>
+</html>
